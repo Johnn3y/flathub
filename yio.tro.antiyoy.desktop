@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Antiyoy
+Exec=/app/bin/antiyoy
+Terminal=false
+Type=Application
+Categories=Game;
+StartupNotify=false
+Icon=yio.tro.antiyoy

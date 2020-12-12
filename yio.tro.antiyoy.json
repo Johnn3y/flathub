@@ -1,0 +1,59 @@
+{
+    "app-id": "yio.tro.antiyoy",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "20.08",
+    "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.openjdk"
+    ],
+    "command": "/app/bin/antiyoy",
+    "finish-args": [
+        "--socket=x11",
+        "--socket=pulseaudio",
+        "--device=dri",
+        "--share=ipc",
+        "--env=PATH=/app/jre/bin:/usr/bin"
+    ],
+    "modules": [
+        {
+            "name": "openjdk",
+            "buildsystem": "simple",
+            "build-commands": [
+                "/usr/lib/sdk/openjdk/install.sh"
+            ]
+        },
+        {
+            "name": "antiyoy",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm 644 yio.tro.antiyoy.desktop /app/share/applications/yio.tro.antiyoy.desktop",
+                "install -Dm 644 yio.tro.antiyoy.appdata.xml /app/share/appdata/yio.tro.antiyoy.appdata.xml",
+                "install -Dm 644 antiyoy.jar /app/bin/antiyoy.jar",
+                "install -Dm 744 antiyoy-wrapper.sh /app/bin/antiyoy",
+                "install -Dm 644 antiyoy-512x512.png /app/share/icons/hicolor/512x512/apps/yio.tro.antiyoy.png"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "antiyoy_pc.zip"
+                },
+                {
+                    "type": "file",
+                    "path": "yio.tro.antiyoy.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "yio.tro.antiyoy.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "antiyoy-512x512.png"
+                },
+                {
+                    "type": "file",
+                    "path": "antiyoy-wrapper.sh"
+                }
+            ]
+        }
+    ]
+}

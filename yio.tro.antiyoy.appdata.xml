@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>yio.tro.antiyoy</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Antiyoy</name>
+  <summary>Turn-based strategy with simple rules</summary>
+  <description>
+    <p>Turn-based strategy with simple rules. Easy to learn, hard to master.</p>
+    <p>Features:</p>
+      <ul>
+        <li>Hotseat multiplayer up to 10 players</li>
+        <li>Random map generator</li>
+        <li>Smooth animations and good optimization</li>
+        <li>Easy tutorial</li>
+      </ul>
+    <p>Unofficial distribution.</p>
+  </description>
+  ​<screenshots>
+    <screenshot type="default">
+      <caption>Antiyoy Gameplay</caption>
+      <image>Screenshot-1.png</image>
+    </screenshot>
+    </screenshots>
+  <launchable type="desktop-id">yio.tro.antiyoy.desktop</launchable>
+  <url type="homepage">http://github.com/yiotro/antiyoy</url>
+  <update_contact>http://github.com/yiotro</update_contact>
+  <developer_name>yiotro</developer_name>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="1.26u" date="2020-10-14"></release>
+  </releases> 
+</component>
